@@ -1,0 +1,1 @@
+document.getElementById("credits").innerHTML="Made with <i class='fa fa-heart heart text-danger'></i> by <a href='#' style= 'color:black; font-style: italic;'>Wajiha Muhammad Ismail</a>";
