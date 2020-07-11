@@ -21,12 +21,17 @@ function timer(){
     }
 }
 
+var dStart = false;
 function start(){
-    interval = setInterval(timer, 10)
+    if(dStart == false){
+        interval = setInterval(timer, 10)
+        dStart = true;
+    }
 }
 
 function stop(){
     clearInterval(interval);
+    dStart = false;
 }
 
 function reset(){
@@ -38,3 +43,4 @@ function reset(){
     msecHeading.innerHTML = msec;
     stop()
 }
+
